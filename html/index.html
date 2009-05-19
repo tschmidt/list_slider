@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>list_slide</title>
+
+		<link rel="stylesheet" href="stylesheets/application.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<script src="javascripts/jquery-1.3.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="javascripts/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../lib/jquery.list_slider.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8">
+			jQuery(document).ready(function () {
+				jQuery('#people .main').list_slider({
+					speed : 250,
+					showText : "Get More Info",
+					hideText : "I'm Done"
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="container">
+			<h1 id="pagetitle">jQuery Plugin: <span>list_slide</span></h1>
+			
+			<h2>Description</h2>
+			<p>
+				Show a list that will display additional information for each item. View
+				source to see the structure for each item in the list.
+			</p>
+			
+			<h2>Options</h2>
+			<p>
+				<table>
+					<thead>
+						<tr>
+							<th>Option</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>speed</td>
+							<td>The speed in which the animation completes. This is represented in milliseconds</td>
+						</tr>
+						<tr>
+							<td>showText</td>
+							<td>The text that should be displayed for the link to "show" the additional information</td>
+						</tr>
+						<tr>
+							<td>hideText</td>
+							<td>The text that should be displayed for the link to "hide" the additional information</td>
+						</tr>
+					</tbody>
+				</table>
+			</p>
+			
+			<h2>HTML Structure</h2>
+			<p>
+				For this plugin the HTML structure that is expected is the following:
+				
+				<pre><code>&lt;ol id="people"&gt;
+  &lt;li&gt;
+    &lt;div class="main"&gt;
+      &lt;div class="img"&gt;
+        &lt;img src="source/to/img" /&gt;
+      &lt;/div&gt;
+      
+      &lt;div class="info"&gt;
+        &lt;span&gt;Name: Jon Dough&lt;/span&gt;
+        &lt;span&gt;Other: Long walks on the beach&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class="additional"&gt;
+      &lt;ol&gt;
+        &lt;li&gt;One&lt;/li&gt;
+        &lt;li&gt;Two&lt;/li&gt;
+        &lt;li&gt;Three&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+			</p>
+			
+			<h2>Examples</h2>
+			<ol id="people">
+				<li>
+					<div class="main">
+						<div class="img">
+							<img src="images/test1.gif">
+						</div>
+						<div class="info">
+							<span>Name: Jon Dough</span>
+							<span>Other: Long walks on the beach</span>
+						</div>
+					</div>
+					
+					<div class="additional">
+						<ol>
+							<li>One</li>
+							<li>Two</li>
+							<li>Three</li>
+						</ol>
+					</div>
+				</li>
+				
+				<li>
+					<div class="main">
+						<div class="img">
+							<img src="images/test1.gif">
+						</div>
+						<div class="info">
+							<span>Name: Jane Dough</span>
+							<span>Other: Eating Bon Bons with Mr. Winkles</span>
+						</div>
+					</div>
+					
+					<div class="additional">
+						<ol>
+							<li>One</li>
+							<li>Two</li>
+							<li>Three</li>
+						</ol>
+					</div>
+				</li>
+			</ol>
+		</div>
+	</body>
+</html>
