@@ -1,0 +1,13 @@
+= list_slider
+
++list_slider+ is a jQuery plugin that takes a list element, finds the additional
+information for each item in the list and hides it. It will then add a link so
+that the user may toggle the visibility of this information.
+
+The plugin is very specific at this point (as far as the expected markup) but
+will be updated in the future.
+
+== Usage
+
+To see this in action, download the source files and open the html/index.html
+file in a browser of your choice.
