@@ -1,4 +1,4 @@
-= list_slider
+= jQuery Plugin: list_slider
 
 +list_slider+ is a jQuery plugin that takes a list element, finds the additional
 information for each item in the list and hides it. It will then add a link so
